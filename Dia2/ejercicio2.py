@@ -32,7 +32,7 @@ print(", ".join(["a","b","c"]))
 print("".join(["a","b","c"]))
 print("-".join(["a","b","c"]))
 
-#Tipo de Datos
+#Tipo de Datos en PYTHON
 entero = 7
 decimal = 9.5
 cadena = " esto es una cadena "
@@ -67,4 +67,4 @@ nombre = input("Ingrese su nombre: \n")
 print(f"Tu nombre es {nombre}")
 edad = input("Ingrese su edad: \n")
 print(f"Tu edad es {edad}")
-print(type(edad))
+print(type(edad)) #<class 'str'>
