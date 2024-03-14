@@ -1,11 +1,12 @@
 #DESAFIO 1b INTRODUCCION A PYTHON
 
-# datos
-p = float(input("Ingrese el precio de suscripción: "))
-u = int(input("Ingrese el número de usuarios: "))
-gt = float(input("Ingrese los gastos totales: "))
+# datos 
+# se recomienda siempre trabajar con FLOAT cuando hablamos de valores o precios
+precio = float(input("Ingrese el precio de suscripción en CLP: "))
+usuarios = int(input("Ingrese el número de usuarios: "))
+gastos_totales = float(input("Ingrese los gastos totales en CLP: "))
 
 #ecuacion
-utilidades = p * u - gt
+utilidades = precio * usuarios - gastos_totales
 
-print("Las utilidades del proyecto son:", utilidades)
+print(f"Las utilidades del proyecto son: {utilidades} CLP")

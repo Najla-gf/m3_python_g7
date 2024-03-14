@@ -1,14 +1,15 @@
 #DESAFIO 1b INTRODUCCION A PYTHON
 #valores
-p = float(input("Ingrese el precio de suscripción: "))
-u = int(input("Ingrese el número de usuarios: "))
-gt = float(input("Ingrese los gastos totales: "))
-u_anterior = float(input("Ingrese las utilidades del año anterior: "))
+precio = float(input("Ingrese el precio de suscripción en CLP: "))
+usuarios = int(input("Ingrese el número de usuarios: "))
+gastos_totales = float(input("Ingrese los gastos totales en CLP: "))
+utilidad_anterior = float(input("Ingrese las utilidades del año anterior: "))
 
-#Utilidades actuales
-u_actuales = p * u - gt
+#Utilidades actuales formula
+utilidades_actuales = precio * usuarios - gastos_totales
 
-razon_utilidades = u_actuales / u_anterior
+#ecuacion razon
+razon_utilidades = utilidades_actuales / utilidad_anterior
 
-print("Las utilidades del proyecto son:", round(u_actuales, 2))
-print("La razón entre las utilidades actuales y del año anterior es:", round(razon_utilidades, 2))
+print(f"Las utilidades del proyecto son {utilidades_actuales} CLP")
+print(f"La razón entre las utilidades actuales y del año anterior es: {round(razon_utilidades, 2)}")

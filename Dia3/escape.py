@@ -1,12 +1,12 @@
 #DESAFIO 1a INTRODUCCION A PYTHON
-import math
+from math import sqrt #se recomienda importar SOLO lo que vamos a ocupar
 
 #ingreso de datos
-g = float(input("Ingrese el valor de la constante g: ")) #9.8
-r_km = float(input("Ingrese el radio en Km: ")) #6371
+gravedad = float(input("Ingrese el valor de la constante g: ")) #9.8
+radio_km = float(input("Ingrese el radio en Km: ")) #6371
 
 #radio de km a metros
-r_m = r_km * 1000
+radio_m = radio_km * 1000
 
-Ve = math.sqrt(2 * g * r_m)
-print(f"La velocidad de escape es:", round(Ve,1), "m/s") #11174.6
+velocidad_escape = sqrt(2 * gravedad * radio_m)
+print(f"La velocidad de escape es", round(velocidad_escape,1), "m/s") #11174.6
