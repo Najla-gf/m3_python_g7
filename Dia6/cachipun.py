@@ -16,7 +16,7 @@ opcion_usuario = input("Ingresa 'piedra', 'papel' o 'tijera': \n").lower()
 opciones = ['piedra', 'papel', 'tijera'] #los corchetes crean una lista de las opciones válidas
 opcion_computador = random.choice(opciones)
 
-# Validar la opción del usuario y determinar el resultado del juego
+#Validar la opción del usuario y determinar el resultado del juego
 if opcion_usuario in opciones: #el "in" sirve para validar que ingrese la opcion del usuario como válida
     print("Jugaste", opcion_usuario) #la coma separa los strings
     print("Computador jugó", opcion_computador)
