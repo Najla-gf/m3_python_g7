@@ -20,7 +20,7 @@ elif edad == 18:
 else:
     print("Eres menor de edad")   
 
-print("\n") #no tiene valor, solo para egenrar un espacio en la terminal
+print("\n") #no tiene valor, solo para generar un espacio en la terminal
 
 if edad == 0:
     print("La edad es cero")
