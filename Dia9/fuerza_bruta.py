@@ -1,8 +1,18 @@
+"""
+Grupo1:
+Felipe Arias
+Najla Gatica
+Lolett Llanquinao
+Jimena Traipe
+"""
+
+#Actividad 3 - Fuerza bruta
+
 import getpass
 from string import ascii_lowercase
 
-#password = getpass.getpass("Ingresa la contraseña:").lower()
-password = input("Ingresa la contraseña:").lower()
+password = getpass.getpass("Ingresa la contraseña:").lower()
+#password = input("Ingresa la contraseña:").lower()
 
 minusculas = ascii_lowercase
 print(minusculas)

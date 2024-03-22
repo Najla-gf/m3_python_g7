@@ -2,11 +2,11 @@
 Grupo1:
 Felipe Arias
 Najla Gatica
-Jimena Traipe
 Lolett Llanquinao
+Jimena Traipe
 """
 
-#Primeros Auxilios
+#Actividad 2 - Primeros Auxilios
 print("¡Bienvenido a la aplicación de primeros auxilios!")
 print("Por favor, responde las siguientes preguntas para obtener ayuda:")
 

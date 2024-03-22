@@ -2,8 +2,8 @@
 Grupo1:
 Felipe Arias
 Najla Gatica
-Jimena Traipe
 Lolett Llanquinao
+Jimena Traipe
 """
 
 #Actividad 1 - Filtrado compacto
@@ -29,10 +29,9 @@ umbral_ventas = int(sys.argv[1])
 
 #Filtra los meses mayores al umbral y crea el nuevo diccionario
 #Comprehension
-meses_mayor_a_umbral_ventas = {mes: ventas_mes for mes, ventas_mes in ventas.items() if ventas_mes > umbral_ventas}
+meses_mayor_a_umbral_ventas = {clave: valor for clave, valor in ventas.items() if valor > umbral_ventas}
 
 #Imprime el resultado
 print(meses_mayor_a_umbral_ventas)
 
-#Ingresar en la consola
-#python Dia9/mayor_a.py 40000
+#Ingresar en la consola: python Dia9/mayor_a.py 40000
