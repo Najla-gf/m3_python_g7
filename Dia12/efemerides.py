@@ -14,5 +14,7 @@ clave = input('Ingrese una Fecha: ').lower()
 
 #Imprimir el resultado del valor dentro del diccionario
 #nos arroja el valor como resultado
-print(f'Efemérides: {efemerides[clave]}')
+#print(f'Efemérides: {efemerides[clave]}')
 
+#Si no encuentra la fecha devolverá el texto indicado
+print(f'Efemérides: {efemerides.get(clave,"No hay eventos para esta fecha")}')
