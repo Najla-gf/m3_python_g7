@@ -23,4 +23,3 @@ print("El promedio de todas las velocidades es de:", promedio)
 correas_sobre_promedio = correas_sobre_promedio(velocidad)
 print("Las posiciones de las correas transportadoras mayores al promedio son:", correas_sobre_promedio)
 
-
