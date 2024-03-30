@@ -1,11 +1,11 @@
 #Desafío - Estructuras de datos y funciones (II)
 #Apoyo matemático.
 
-def factorial(n):
-    if n == 0: #si se ingresa un 0, asegurarse que se cambie a 1 para que no ocasione problemas
+def factorial(numero):
+    if numero == 0: #si se ingresa un 0, asegurarse que se cambie a 1 para que no ocasione problemas
         return 1
     else:
-        return n * factorial(n-1) #el factorial multiplica el numero por su anterior
+        return numero * factorial(numero-1) #el factorial multiplica el numero por su anterior
 
 def productoria(lista): #multiplica todos los elementos de una lista
     result = 1 #debe tener un valor iniciar para funcionar bien
