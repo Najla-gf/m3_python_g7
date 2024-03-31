@@ -13,11 +13,24 @@ def productoria(lista): #multiplica todos los elementos de una lista
         result *= num #multiplica por cada numero dela lista
     return result
 
-def calcular(factorial_1, productoria_1, factorial_2):
+#utilizando kwargs:
+def calcular(**kwargs):
+    for clave, valor in kwargs.items():
+        #if clave == "factorial": esto funcionaria en caso de haber un solo factorial
+        if clave.startswith("fact"): #cualquier argumento que comience con fact la detecta como factorial
+            print("El factorial de", valor, "es:", factorial(valor))
+        elif clave == "productoria":
+            print("La productoria de", valor, "es:", productoria(valor))
+
+#Invoca la función
+calcular(factorial=5, productoria=[3,6,4,2,8], factorial_2=6)
+
+
+#otra forma mediante funciones
+"""def calcular(factorial_1, productoria_1, factorial_2):
     print("El factorial de", factorial_1, "es:", factorial(factorial_1))
     print("La productoria de", productoria_1, "es:", productoria(productoria_1))
     print("El factorial de", factorial_2, "es:", factorial(factorial_2))
 
-#Invocar la función
-calcular(factorial_1=5, productoria_1=[3,6,4,2,8], factorial_2=6)
+calcular(factorial_1=5, productoria_1=[3,6,4,2,8], factorial_2=6)"""
 

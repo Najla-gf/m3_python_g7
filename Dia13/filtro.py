@@ -32,7 +32,7 @@ elif len(sys.argv) == 3:
     if "mayor" not in mayor_que and "menor" not in mayor_que:
         print("Lo sentimos, no es una operación válida.")
         exit()
-    mayor_que = mayor_que == "mayor" #se le agrega una condición para validar la condicion de agregar terminos validos
+    mayor_que = mayor_que == "mayor" #se le agrega una condición para validar el ingreso de terminos validos
     productos_filtrados = filtro_umbral(precios, umbral, mayor_que)
     if mayor_que:
         print("Productos con precios mayores que", umbral, ":")
