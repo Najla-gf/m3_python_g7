@@ -9,7 +9,7 @@ def choose_level(n_pregunta, p_level):
     """
 
     if n_pregunta <= p_level:  #Si el número de pregunta es menor o igual al número máximo de preguntas por nivel
-        level = "básicas"
+        level = "basicas"
     elif n_pregunta <= 2 * p_level:  #Si el número de pregunta está entre p_level y 2 * p_level
         level = "intermedias"
     else:  #Si el número de pregunta es mayor a 2 * p_level
@@ -19,7 +19,9 @@ def choose_level(n_pregunta, p_level):
 
 if __name__ == '__main__':
     # verificar resultados
-    print(choose_level(2, 2)) # básicas
+    print(choose_level(1, 1)) # básicas
     print(choose_level(3, 2)) # intermedias
     print(choose_level(7, 2)) # avanzadas
-    print(choose_level(4, 3)) # intermedias
+    print(choose_level(9, 1)) # avanzadas
+    print(choose_level(2, 1)) # intermedias
+    print(choose_level(3, 1)) # avanzaas

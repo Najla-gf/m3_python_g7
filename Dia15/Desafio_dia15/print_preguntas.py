@@ -1,13 +1,12 @@
 import preguntas as p
 
 def print_pregunta(enunciado, alternativas):
-    
     #Imprimir enunciado y alternativas
-    print(enunciado)
+    print(enunciado[0])
     
     #Imprimir cada alternativa con su letra asociada
     for letra, alternativa in zip("ABCD", alternativas):
-        print(f"{letra}. {alternativa}")
+        print(f"{letra}. {alternativa[0]}")
 
 
 if __name__ == '__main__':

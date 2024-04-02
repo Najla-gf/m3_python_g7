@@ -5,16 +5,13 @@ def verificar(alternativas, eleccion):
     #devuelve el índice de elección dada
     eleccion = ['a', 'b', 'c','d'].index(eleccion)
 
-    # generar lógica para determinar respuestas correctas
-    ##########################################################################################
-    pass
-    
-    
-    
-    
-    ##########################################################################################
+    #generar lógica para determinar respuestas correctas
+    correcto = eleccion == 1 
+    if correcto:
+        print('Respuesta Correcta')
+    else:
+        print('Respuesta Incorrecta')
     return correcto
-
 
 
 if __name__ == '__main__':

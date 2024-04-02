@@ -14,6 +14,7 @@ def choose_q(dificultad):
     preguntas = p.pool_preguntas[dificultad]
     
     #Obtener las opciones disponibles para la dificultad especificada
+    global opciones
     opciones_disponibles = opciones[dificultad]
     
     #Escoger una pregunta al azar
