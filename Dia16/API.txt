@@ -1,0 +1,26 @@
+#API es una interfaz de acceso que permite comunicar programas
+#API no es lo mismo que Jayson
+
+Sirve para trabajar con datos, para acceder a información externa
+
+"""
+request: pedido informcion que el cliente envía a una URL
+
+response (respuesta): es la informacion
+
+"""
+Métodos HTTP o verbos:
+GET para obtner informacion
+POST se usa para la iniciación
+PUT y PATCH para actualizar
+DELETE ara eliminar
+
+*********
+Python ofrece dos versiones para descargar una API, mediante un request y http_client
+
+
+CRUD:
+Create
+Read
+Update
+Delete
