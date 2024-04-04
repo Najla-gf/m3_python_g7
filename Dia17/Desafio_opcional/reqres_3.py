@@ -1,22 +1,21 @@
-#??????????????????
-#Update y actualización usuario
-
+#Actualización con método PUT
 import requests
 
-url = "https://jsonplaceholder.typicode.com/posts"
+#Modificaremos al usuario numero 4
+url = "https://reqres.in/api/users/4"
 
-payload = ({
+#Datos a ingresar
+payload = {
     "name": "morpheus",
     "residence": "zion"
-})
+}
 
-updated_user = requests.post(url, json=payload)
+response = requests.put(url, json=payload)
 
-if updated_user.status_code == 201:
-    print("Inserción exitosa")
-    print(updated_user.text)
+if response.status_code == 200:
+    updated_user = response.json()
+    print("Usuario actualizado exitosamente:")
+    print(updated_user)
 
 else:
-    print("Error en la creación del post")
-
-#??????????????????
+    print("Error al actualizar el usuario. Código de estado:", response.status_code)

@@ -25,6 +25,8 @@ html_template = Template('''<!DOCTYPE html>
                             <h1>Nuestra página Web</h1>
 
                             $body
+                            
+                            <p>asfdafsdasfdhafsd</p>
 
                             </body>
                             </html>
