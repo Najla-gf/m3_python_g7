@@ -1,3 +1,5 @@
+#DELETE Tracey
+
 import requests
 
 #Eliminar el usuario Tracey

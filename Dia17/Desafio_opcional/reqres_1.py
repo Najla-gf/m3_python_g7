@@ -1,3 +1,11 @@
+"""
+Grupo1:
+Felipe Arias
+Najla Gatica
+Lolett Llanquinao
+Jimena Traipe
+"""
+#Solicitar info de los usuarios
 import requests
 
 url = "https://reqres.in/api/users"
