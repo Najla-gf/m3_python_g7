@@ -12,10 +12,10 @@ payload = {
 
 response = requests.put(url, json=payload)
 
-if response.status_code == 200:
+if response.status_code == 200: #200 status ok actualizado
     updated_user = response.json()
     print("Usuario actualizado exitosamente:")
     print(updated_user)
 
 else:
-    print("Error al actualizar el usuario. Código de estado:", response.status_code)
+    print("Error al actualizar el usuario. Código", response.status_code)
