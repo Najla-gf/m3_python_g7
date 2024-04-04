@@ -11,9 +11,9 @@ def pagina_html(url):
     response = request_get(url)
     texto = ''
     for aves in response:
-        texto += t.aves_template. substitute(
-            title_es = aves['name']['spanish'],
-            title_en = aves['name']['english'],
+        texto += t.aves_template.substitute(
+            name_spa = aves['name']['spanish'],
+            name_eng = aves['name']['english'],
             url = aves['images']['main'],
         )
     return t.html_template.substitute(body = texto)
