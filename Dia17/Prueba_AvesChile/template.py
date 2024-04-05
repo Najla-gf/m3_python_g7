@@ -27,7 +27,7 @@ html_template = Template('''<!DOCTYPE html>
 
 <div class="container">
         <div class="row">
-$body
+$contenido
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
@@ -37,7 +37,7 @@ $body
 aves_template = Template ('''
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                         <div class="card">
-                                <img src="$url" class="card-img-top" alt="Pajaro">
+                                <img src="$url_img" class="card-img-top" alt="Pajaro">
                                 <div class="card-body">
                                         <h5 class="card-title">$name_spa</h5>
                                         <p class="card-text">$name_eng</p>

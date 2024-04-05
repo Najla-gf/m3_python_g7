@@ -17,11 +17,11 @@ def pagina_html(url):
         texto += t.aves_template.substitute(
             name_spa = aves['name']['spanish'],
             name_eng = aves['name']['english'],
-            url = aves['images']['main'],
+            url_img = aves['images']['main'], #modificacion del nombre a url_img para no confundir con url api
         )
-    return t.html_template.substitute(body = texto)
+    return t.html_template.substitute(contenido = texto)
 
 if __name__ == '__main__':
-    html = pagina_html('https://aves.ninjas.cl/api/birds')
+    aves_html = pagina_html('https://aves.ninjas.cl/api/birds')
     with open('dia17/Prueba_AvesChile/index.html', 'w', encoding='utf-8') as f:
-        f.write(html)
+        f.write(aves_html)
