@@ -23,5 +23,5 @@ def pagina_html(url):
 
 if __name__ == '__main__':
     html = pagina_html('https://aves.ninjas.cl/api/birds')
-    with open('dia17/Prueba_AvesChile/index.html', 'w') as f:
+    with open('dia17/Prueba_AvesChile/index.html', 'w', encoding='utf-8') as f:
         f.write(html)
