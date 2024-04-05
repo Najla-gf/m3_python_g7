@@ -3,6 +3,14 @@ import json
 
 
 def request_get(url):
+    """Función para rescatar información de la API y devolver la información como un diccionario
+
+    Args:
+        url (https): enlace de la API donde se aplicará la solicitud GET
+
+    Returns:
+        dict: diccionario Python que representa la respuesta JSON obtenida de la URL.
+    """
     return json.loads(requests.get(url).text)
 
 

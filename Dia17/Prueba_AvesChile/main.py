@@ -1,13 +1,16 @@
 from api_get import request_get
 import template as t
 
-"""lista_url = [elemento[' url'] for elemento in out]
-texto_img = ''
-for url in lista_url:
-            texto_img += img_template.substitute (url = url)+ '\n'
-print(texto_img)"""
 
 def pagina_html(url):
+    """Crea un sitio web que muestra información sobre aves recuperada de una API.
+
+    Args:
+        url (string): enlace de la API de donde se obtiene la informacion
+
+    Returns:
+        string: texto que representa el contenido html generado
+    """
     response = request_get(url)
     texto = ''
     for aves in response:
